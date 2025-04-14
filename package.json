@@ -4,6 +4,8 @@
 		"dotenv": "^16.4.7"
 	},
 	"scripts": {
-		"start": "node src/index.js"
-	}
+		"start": "node src/index.js",
+		"deploy": "node src/deploy-commands.js"
+	},
+	"type": "module"
 }
