@@ -13,7 +13,7 @@ const token = process.env.TOKEN;
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.commands = new Collection();
-
+client.cooldowns = new Collection();
 
 const commandsFolderPath = join(__dirname, 'commands');
 const commandFolders = readdirSync(commandsFolderPath);
